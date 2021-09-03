@@ -78,6 +78,7 @@ body {
 .main {
     padding: 2em 12em;
     background: var(--green2);
+    height: 100vh;
 }
 
 .blogpost {
