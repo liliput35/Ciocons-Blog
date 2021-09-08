@@ -148,6 +148,10 @@ body {
         display: block;
         margin-bottom: .5em;
         font-size: 2em;
+        position: fixed;
+        width: 100%;
+        background-color: var(--green2);
+        top: 0;
     }
    .navbar {
        float: unset;
@@ -172,7 +176,7 @@ body {
        margin: 0;
    }
    .main {
-       padding: 1em 2em;
+       padding: 3em 2em;
    }
    .blogpost {
        margin-top: 0;
