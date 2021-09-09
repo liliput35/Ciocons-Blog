@@ -160,7 +160,7 @@ body {
        height: 10%;
        max-height: 40px;
        bottom: 0;
-       padding: 0 3em;
+       padding: 0.5em 3em;
    }
    .navbar h1 {
        display: none;
@@ -169,6 +169,13 @@ body {
        display: flex;
        flex-direction: row;
        justify-content: space-between;
+       height: max-content;
+   }
+   .navbar ul li {
+       margin-top: 0;
+   }
+   nav {
+       max-height: 20px;
    }
    .navbar .socials {
        display: none;
