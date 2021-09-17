@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 :root {
     --white: #9191af;
     --green: #39395C;
@@ -21,7 +23,7 @@ a {
 body {
     background-color: var(--white);
     color: var(--gree3);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .container {
     margin-left: 20%;
