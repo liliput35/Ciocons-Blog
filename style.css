@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+    --white: #9191af;
+    --green: #39395C;
+    --green2: #2C2C3E;
+    --gree3: #CCCCFF;
+    --primari: #8A96FF;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--gree3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--gree3);
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    margin-left: 20%;
+}
+
+.navbar {
+    box-sizing: border-box;
+    background: var(--green);
+    height: 100vh;
+    padding-left: 2em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    float: left;
+    position: fixed;
+}
+
+.navbar h1 {
+    color: var(--primari);
+}
+
+.navbar ul li {
+    display: block;
+    margin: 1.3em 0;
+}
+.navbar ul li a {
+    font-size: 1.3em;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: var(--white);
+    left: 0;
+    bottom: -2px;
+    transition: .5s;
+
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 8em;
+}
+.socials li {
+    display: inline-block;
+}
+.socials li a img {
+    width: 25px;
+}
+
+.main {
+    padding: 2em 12em;
+    background: var(--green2);
+}
+
+.blogpost {
+    margin-bottom: 1.5em;
+    border: solid 1px var(--white);
+    padding: 1em;
+    border-radius: 10px;
+    color: var(--gree3);
+}
+
+.profile a {
+    color: #ddddf7;
+}
+.first {
+    margin-top: 0;
+}
+
+.blogpost h3 {
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    border-bottom: solid 2px #78788b;
+    padding-bottom: 5px;
+    color: #eee;
+}
+.blogpost p {
+    color: #e5e5e5;
+}
+
+.blogpost button {
+    border: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5px;
+    font-size: 1em;
+    background: var(--white);
+    color: red;
+    padding: 2px;
+}
+
+.blogpost img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.blogpost p a {
+    text-decoration: underline;
+    color: blue;
+}
+.header {
+    display: none;
+}
+
+.about {
+    height: 100vh;
+    color: var(--gree3);
+}
+.aboutheader {
+    display: block;
+}
+@media only screen and (max-width: 1000px){
+    .header{
+        display: block;
+        margin-bottom: .5em;
+        font-size: 2em;
+        position: fixed;
+        width: 100%;
+        background-color: var(--green2);
+        top: 0;
+    }
+   .navbar {
+       float: unset;
+       width: 100%;
+       position: fixed;
+       height: 10%;
+       max-height: 40px;
+       bottom: 0;
+       padding: 0.5em 3em;
+   }
+   .navbar h1 {
+       display: none;
+   }
+   .navbar ul {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       height: max-content;
+   }
+   .navbar ul li {
+       margin-top: 0;
+   }
+   nav {
+       max-height: 20px;
+   }
+   .navbar .socials {
+       display: none;
+   }
+   .container{
+       margin: 0;
+   }
+   .main {
+       padding: 3em 2em;
+   }
+   .blogpost {
+       margin-top: 0;
+   }
+}
+
+
+.none {
+    display: none;
+}
+
+.toggle {
+    display: block;
+}
+
+
+
+
+.login {
+    background-color: var(--green);
+    height: 100vh;
+    color: var(--gree3);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.login .wrapper {
+    position: absolute;
+    top: 30%;
+}
+
+.login h1 {
+    font-size: 4em;
+}
+
+.login input {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+}
+
+.login #submit {
+    border: none;
+    background-color: var(--green2);
+    color: #b4b4b4;
+}
+
+.login form {
+    margin-bottom: 1em;
+}
+
+.login #gotosite {
+    font-size: 1.3em;
+    color: aqua;
+    margin-bottom: 1em;
+}
+
+.login p {
+    font-size: 1.3em;
+}
+
+
+.login #wrong {
+    color: red;
+}
